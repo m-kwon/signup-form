@@ -45,12 +45,50 @@ table {
 
 * {
   font-family: 'Josefin Sans', sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
-#background-image {
-  max-height: 100vh;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-  vertical-align: top;
+.main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main,
+#left-container div {
+  display: flex;
+  flex-flow: row wrap;;
+}
+
+#left-container {
+  background-image: url(./images/sample_background.jpg);
+  background-position: center;
+  background-size: 100vh;
+  background-repeat: no-repeat;
+  width: 40vw;
+}
+
+#left-container div {
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  top: 20vh;
+  gap: 1vw;
+  padding: 15px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+#left-container h1 {
+  color: #ffffff;
+}
+
+#left-container img {
+  height: 10vh;
+}
+
+#left-container p {
+  position: absolute;
+  bottom: 1vh;
 }
