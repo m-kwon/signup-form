@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -18,13 +18,6 @@
           <h1>COMPANY</h1>
         </div>
         <p>@justinljwang on Unsplash</p>
-        <!-- <img id="background-image" src="./images/sample_background.jpg" alt="">
-        <p id="photo-credit">Image by Rob Bates on Unsplash</p>
-        <div id="banner">
-          <img id="logo" src="./images/sample_logo.png" alt="">
-          <h1>COMPANY</h1>
-          <div id="banner-bg"></div>
-        </div> -->
       </div>
 
       <div id="right-container">
@@ -75,5 +68,73 @@
       </div>
     </div>
     <script src="app.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css">
+      <title>Sign-Up Form</title>
+  </head>
+  <body>
+      <div class="content">
+          <div class="picture">
+              <div class="logo">
+                  <img src="./images/sample_logo.png" alt="logo">
+                  <h1>Cool New Company</h1>
+              </div>
+          </div>
+          <div class="right">
+              <div class="dummy-text left">
+                  <p>This is not a real online service! This is a sample sign-up form.</p>
+                  <p>Sign up <em>now</em> to get started.</p>
+                  <p class="remote-text">You <em>know</em> you want to.</p>
+              </div>
+              <form action="#" method="get">
+                  <div class="form left">
+                      <p class="form-title">Let's do this!</p>
+                      <div class="input">
+                          <label for="first-name">First name</label>
+                          <input type="text" name="first-name" id="first-name" required>
+                      </div>
+
+                      <div class="input">
+                          <label for="last-name">Last name</label>
+                          <input type="text" name="last-name" id="last-name" required>
+                      </div>
+
+                      <div class="input">
+                          <label for="email">Email</label>
+                          <input type="email" name="email" id="email" required>
+                      </div>
+
+                      <div class="input">
+                          <label for="phone-number">Phone number</label>
+                          <input type="tel" name="phone-number" id="phone-number" placeholder="(XXX) XXX - XXXX" minlength="10" required>
+                      </div>
+
+                      <div class="input">
+                          <label for="password">Password</label>
+                          <input type="password" name="password" id="password" required>
+                      </div>
+
+                      <div class="input">
+                          <label for="confirm-password">Confirm password</label>
+                          <input type="password" name="confirm-password" id="confirm-password" required>
+                      </div>
+                  </div>
+                  <div class="left button"><button type="submit">Create Account</button></div>
+              </form>
+              <div class="log-in left"><p>Already have an account?</p><a href="#">Log in</a></div>
+          </div>
+
+      </div>
   </body>
 </html>
