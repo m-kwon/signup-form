@@ -111,6 +111,15 @@ body {
   filter: invert(80%);
 }
 
+#photo-credit {
+  position: absolute;
+  top: 0vh;
+  left: 0vw;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: #353535;
+}
+
 /* right side */
 
 .right {
@@ -238,6 +247,11 @@ button:hover {
     width: 100vw;
     position: static;
     gap: 10px;
+  }
+
+  #photo-credit {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.7);
   }
 
   .right {
