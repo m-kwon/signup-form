@@ -17,6 +17,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	vertical-align: baseline;
+
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -54,6 +55,16 @@ table {
   box-sizing: border-box;
   font-family: 'Josefin Sans', sans-serif;
   color: var(--txt);
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  overflow: auto;
+  height: 100%;
 }
 
 .content {
@@ -194,4 +205,89 @@ button:hover {
 
 .log-in a:hover {
   color: white;
+}
+
+/* mobile */
+
+@media only screen and (max-width: 600px)  {
+  html {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  body {
+    overflow: auto;
+    height: 100%;
+    background-color: #353535;
+  }
+
+  .content {
+      flex-flow: column;
+      height: auto;
+      text-align: center;
+  }
+
+  .picture {
+      width: 100vw;
+      height: 15vh;
+      display: flex;
+      background-size: 100vw;
+  }
+
+  .logo {
+    width: 100vw;
+    position: static;
+    gap: 10px;
+  }
+
+  .right {
+    width: auto;
+    height: auto;
+  }
+
+  .dummy-text {
+    width: auto;
+    margin-top: 30px;
+  }
+
+  .left {
+    padding: 10px 20px;
+  }
+
+  .remote-text {
+    padding: 20px 0;
+    margin: 0;
+  }
+
+  .form {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .input {
+    text-align: left;
+    width: auto;
+    font-size: 0.9em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input {
+    font-size: 0.9rem;
+    height: 1.5rem;
+    width: 70vw;
+  }
+
+  .button,
+  .log-in {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+
+  button {
+    margin-bottom: 0px;
+    width: 60vw;
+    padding: 10px 5px;
+  }
 }
